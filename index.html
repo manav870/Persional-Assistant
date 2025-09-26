@@ -22,13 +22,12 @@
             transform: translateY(0);
         }
         .gemini-response {
-            white-space: pre-wrap; /* Allows line breaks in the generated text to be displayed */
+            white-space: pre-wrap;
         }
     </style>
 </head>
 <body class="bg-slate-900 text-slate-300">
 
-    <!-- Header & Navigation -->
     <header class="bg-slate-900/70 backdrop-blur-lg sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-white">MyPortfolio</a>
@@ -44,7 +43,6 @@
                 </svg>
             </button>
         </nav>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
             <a href="#home" class="block hover:text-sky-400 transition-colors duration-300">Home</a>
             <a href="#about" class="block hover:text-sky-400 transition-colors duration-300">About</a>
@@ -55,7 +53,6 @@
 
     <main class="container mx-auto px-6 py-12">
 
-        <!-- Hero Section -->
         <section id="home" class="min-h-[80vh] flex flex-col md:flex-row items-center justify-center section-fade-in">
             <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
                 <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-4">Hi, I'm John Doe</h1>
@@ -68,7 +65,6 @@
             </div>
         </section>
 
-        <!-- About Me Section -->
         <section id="about" class="py-20 section-fade-in">
             <h2 class="text-3xl font-bold text-white text-center mb-12">About Me</h2>
             <div class="flex flex-col md:flex-row items-center gap-12">
@@ -79,14 +75,14 @@
                     <div class="flex justify-between items-center mb-4">
                         <h3 class="text-xl font-semibold text-white">My Bio</h3>
                         <button id="generate-bio-btn" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-lg text-sm flex items-center gap-2">
-                           ✨ Generate Bio
+                            ✨ Generate Bio
                         </button>
-                   </div>
-                   <div id="bio-generator" class="hidden mb-4 p-4 bg-slate-800 rounded-lg">
-                       <label for="bio-keywords" class="block mb-2 text-sm font-medium text-slate-300">Enter some keywords about yourself (e.g., "passionate frontend developer, loves coffee, React expert"):</label>
-                       <textarea id="bio-keywords" rows="2" class="w-full bg-slate-700 border border-slate-600 rounded-lg py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-sky-500 mb-2"></textarea>
-                       <button id="submit-bio-keywords" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg">Generate</button>
-                   </div>
+                    </div>
+                    <div id="bio-generator" class="hidden mb-4 p-4 bg-slate-800 rounded-lg">
+                        <label for="bio-keywords" class="block mb-2 text-sm font-medium text-slate-300">Enter some keywords about yourself (e.g., "passionate frontend developer, loves coffee, React expert"):</label>
+                        <textarea id="bio-keywords" rows="2" class="w-full bg-slate-700 border border-slate-600 rounded-lg py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-sky-500 mb-2"></textarea>
+                        <button id="submit-bio-keywords" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg">Generate</button>
+                    </div>
                     <div id="about-me-content" class="gemini-response">
                         <p class="mb-4">Hello! I'm John Doe, a web developer with a knack for creating clean, efficient, and beautiful digital experiences. My journey into web development started years ago, and since then, I've been hooked on the endless possibilities of code.</p>
                         <p class="mb-4">I specialize in front-end technologies and have a strong command of HTML, CSS, JavaScript, and modern frameworks like React and Vue. I love turning complex problems into simple, intuitive designs.</p>
@@ -105,11 +101,9 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects" class="py-20 section-fade-in">
             <h2 class="text-3xl font-bold text-white text-center mb-12">My Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
                 <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
                     <img src="https://placehold.co/600x400/1e293b/94a3b8?text=Project+One" alt="Project 1" class="w-full h-48 object-cover">
                     <div class="p-6 flex flex-col flex-grow">
@@ -123,7 +117,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 2 -->
                 <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
                     <img src="https://placehold.co/600x400/1e293b/94a3b8?text=Project+Two" alt="Project 2" class="w-full h-48 object-cover">
                     <div class="p-6 flex flex-col flex-grow">
@@ -137,7 +130,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 3 -->
                 <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
                     <img src="https://placehold.co/600x400/1e293b/94a3b8?text=Project+Three" alt="Project 3" class="w-full h-48 object-cover">
                     <div class="p-6 flex flex-col flex-grow">
@@ -154,7 +146,6 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="py-20 section-fade-in">
             <h2 class="text-3xl font-bold text-white text-center mb-4">Get In Touch</h2>
             <p class="text-center max-w-2xl mx-auto mb-12">I'm currently available for freelance work and open to new opportunities. If you have a project in mind or just want to say hello, feel free to reach out!</p>
@@ -170,20 +161,10 @@
                     </div>
                     <div>
                         <label for="message" class="sr-only">Message</label>
-                        <textarea name="message" id="message" rows="4" placeholder="Your Message" class="w-full bg-slate-800 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-sky-500 gemini-response"></textarea>
+                        <textarea name="message" id="message" rows="4" placeholder="Your Message" class="w-full bg-slate-800 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
                     </div>
                     <div class="text-center">
-                        <div id="ai-assistant-form" class="hidden p-4 bg-slate-800 rounded-lg text-left mb-4">
-                             <label for="message-goal" class="block mb-2 text-sm font-medium text-slate-300">What is the goal of your message?</label>
-                             <input type="text" id="message-goal" placeholder="e.g., 'Inquire about freelance work'" class="w-full bg-slate-700 border border-slate-600 rounded-lg py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-sky-500 mb-2">
-                             <button id="generate-message-btn" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg w-full">Generate Message</button>
-                         </div>
-                        <div class="flex flex-col md:flex-row gap-4 justify-center">
-                            <button id="ai-assistant-btn" type="button" class="bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 hover:scale-105 flex items-center justify-center gap-2">
-                                ✨ AI Message Assistant
-                            </button>
-                            <button type="submit" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg transition-transform duration-300 hover:scale-105">Send Message</button>
-                        </div>
+                         <button type="submit" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg transition-transform duration-300 hover:scale-105">Send Message</button>
                     </div>
                 </form>
             </div>
@@ -191,7 +172,6 @@
 
     </main>
 
-    <!-- Project Description Generator Modal -->
     <div id="project-modal" class="hidden fixed inset-0 bg-black bg-opacity-70 z-50 justify-center items-center p-4">
         <div class="bg-slate-800 rounded-lg p-8 max-w-lg w-full">
             <h3 class="text-xl font-bold text-white mb-4">✨ Generate Project Description</h3>
@@ -205,7 +185,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="bg-slate-800/50">
         <div class="container mx-auto px-6 py-6 text-center text-slate-400">
             <p>&copy; 2025 John Doe. All Rights Reserved.</p>
@@ -215,7 +194,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 
-            // --- Mobile Menu ---
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenuButton.addEventListener('click', () => {
@@ -228,7 +206,6 @@
                 });
             }
             
-            // --- Section Fade-in Animation ---
             const sections = document.querySelectorAll('.section-fade-in');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -239,9 +216,8 @@
             }, { threshold: 0.1 });
             sections.forEach(section => { observer.observe(section); });
 
-            // --- Gemini API Integration ---
-            const API_KEY = ""; // In this environment, the API key is handled automatically.
-            const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${API_KEY}`;
+            const API_KEY = "";
+            const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
             async function callGemini(prompt, button) {
                 const originalButtonContent = button.innerHTML;
@@ -257,7 +233,7 @@
                     const payload = { contents: [{ parts: [{ text: prompt }] }] };
                     
                     let response;
-                    for (let i = 0; i < 3; i++) { // Exponential backoff retry
+                    for (let i = 0; i < 3; i++) {
                         try {
                             response = await fetch(API_URL, {
                                 method: 'POST',
@@ -293,7 +269,6 @@
                 }
             }
             
-            // 1. Bio Generator
             const generateBioBtn = document.getElementById('generate-bio-btn');
             const bioGeneratorDiv = document.getElementById('bio-generator');
             const submitBioKeywordsBtn = document.getElementById('submit-bio-keywords');
@@ -316,7 +291,6 @@
                 bioGeneratorDiv.classList.add('hidden');
             });
 
-            // 2. Project Description Generator
             const projectModal = document.getElementById('project-modal');
             const closeModalBtn = document.getElementById('close-project-modal');
             const submitProjectKeywordsBtn = document.getElementById('submit-project-keywords');
@@ -355,30 +329,6 @@
                 projectModal.classList.add('hidden');
                 projectModal.classList.remove('flex');
             });
-
-            // 3. Contact Message Assistant
-            const aiAssistantBtn = document.getElementById('ai-assistant-btn');
-            const aiAssistantForm = document.getElementById('ai-assistant-form');
-            const generateMessageBtn = document.getElementById('generate-message-btn');
-            const messageGoalInput = document.getElementById('message-goal');
-            const messageTextarea = document.getElementById('message');
-
-            aiAssistantBtn.addEventListener('click', () => {
-                aiAssistantForm.classList.toggle('hidden');
-            });
-
-            generateMessageBtn.addEventListener('click', async () => {
-                const goal = messageGoalInput.value;
-                if (!goal) {
-                    alert('Please enter the goal of your message.');
-                    return;
-                }
-                const prompt = `Write a professional and friendly first-contact message for a portfolio website's contact form. The sender wants to achieve the following goal: "${goal}". The message should be polite, concise, and clearly state its purpose. Start the message with "Hello,".`;
-                const generatedMessage = await callGemini(prompt, generateMessageBtn);
-                messageTextarea.value = generatedMessage;
-                aiAssistantForm.classList.add('hidden');
-            });
-
         });
     </script>
 
